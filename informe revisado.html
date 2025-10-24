@@ -35,63 +35,66 @@
   </head>
   <body class="min-h-screen">
     <!-- 1. Encabezado y Título Principal (Sección de Impacto) -->
-    <header class="header-bg py-16 px-4 md:px-8 text-white mb-12">
-      <div class="max-w-7xl mx-auto">
-        <p class="text-xl opacity-80 mb-3 font-semibold">
+    <header class="header-bg py-12 px-4 md:px-8 text-white mb-10">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-base opacity-80 mb-2 font-semibold tracking-wide">
           Revisión | Octubre 2025
         </p>
-        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">
-          VPH: Desmitificando las Verrugas
+        <h1
+          class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight"
+        >
+          VPH: Verrugas y Mitos
         </h1>
-        <p class="mt-4 text-2xl font-light max-w-3xl">
-          Diferenciación esencial entre las verrugas comunes (no sexuales) y las
-          infecciones genitales (ITS).
+        <p class="mt-3 text-lg font-light max-w-2xl mx-auto">
+          ¿Todas las verrugas son ITS? Descubre la diferencia clave entre
+          verrugas comunes y genitales.
         </p>
       </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 md:px-8 pb-16">
       <!-- 2. Introducción - La Confusión Común -->
-      <section id="introduccion" class="mb-16">
+      <section id="introduccion" class="mb-12">
         <h2
-          class="text-4xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 pb-2"
+          class="text-2xl font-bold text-blue-700 mb-4 text-center border-b-2 border-blue-300 pb-1"
         >
-          El Error Conceptual Más Frecuente
+          ¿Por qué hay confusión?
         </h2>
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-          <p class="text-gray-700 text-lg">
-            Existe una confusión generalizada que asocia *toda* manifestación de
-            VPH con una Infección de Transmisión Sexual (ITS). Esta presentación
-            busca clarificar los **tipos de VPH** y sus **vías de transmisión**
-            para un diagnóstico y una educación del paciente más precisos.
+        <div class="flex flex-col gap-6 md:flex-row md:gap-8 items-center">
+          <p class="text-gray-700 text-base leading-relaxed md:w-1/2">
+            Muchas personas creen que
+            <span class="font-semibold">todas</span> las verrugas por VPH son
+            ITS. Aquí aclaramos los
+            <span class="font-semibold">tipos de VPH</span> y sus
+            <span class="font-semibold">formas de contagio</span> para mejorar
+            el diagnóstico y la educación.
           </p>
           <div
-            class="bg-yellow-100 p-6 rounded-xl border-l-4 border-yellow-500"
+            class="bg-yellow-100 p-4 rounded-xl border-l-4 border-yellow-500 md:w-1/2"
           >
-            <p class="text-xl font-semibold text-yellow-800">
-              <span class="text-3xl mr-2">💡</span> Punto Clave
+            <p class="text-lg font-semibold text-yellow-800 flex items-center">
+              <span class="text-2xl mr-2">💡</span> Clave rápida
             </p>
-            <p class="text-yellow-700 mt-2">
-              El VPH es un grupo viral con más de 200 genotipos, y no todos
-              tienen el mismo tropismo (preferencia de tejido) ni la misma vía
-              de contagio.
+            <p class="text-yellow-700 mt-1 text-sm">
+              El VPH tiene más de 200 tipos. No todos afectan igual ni se
+              transmiten de la misma forma.
             </p>
           </div>
         </div>
       </section>
 
       <!-- 3. Diferenciación: Cutáneo vs Mucoso (La Columna Vertebral de la Ponencia) -->
-      <section id="diferenciacion" class="mb-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">
-          Diferenciación de Tropismo Viral
+      <section id="diferenciacion" class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+          ¿Verruga común o ITS?
         </h2>
 
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="flex flex-col gap-8 md:grid md:grid-cols-2">
           <!-- Columna 1: VPH Cutáneo (Verrugas Comunes/Planas) -->
           <div
-            class="card-diferenciacion bg-white p-6 rounded-2xl border-t-8 border-green-500"
+            class="card-diferenciacion bg-white p-4 rounded-2xl border-t-8 border-green-500"
           >
-            <div class="flex items-center mb-4">
+            <div class="flex items-center mb-2">
               <svg
                 class="w-10 h-10 text-green-600 mr-3"
                 fill="none"
@@ -106,54 +109,50 @@
                   d="M12 4.354a4 4 0 110 5.292M15 21H9a1 1 0 01-1-1v-1a4 4 0 00-4-4H4m7-2h2m-2 4h2m-2 4h2"
                 ></path>
               </svg>
-              <h3 class="text-2xl font-semibold text-gray-800">
-                VPH Cutáneo (No Sexual)
+              <h3 class="text-lg font-semibold text-gray-800">
+                VPH Cutáneo (No sexual)
               </h3>
             </div>
 
-            <h4 class="text-xl font-bold text-green-700 mt-6 mb-2">
-              Genotipos Típicos
+            <h4 class="text-base font-bold text-green-700 mt-4 mb-1">
+              Genotipos
             </h4>
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-600 mb-2 text-sm">
               <span class="font-bold">1, 2, 3, 4, 7, 10, 27, 57.</span> Afectan
-              capas externas de la piel (epidermis).
+              la piel (epidermis).
             </p>
 
-            <h4 class="text-xl font-bold text-green-700 mb-2">Transmisión</h4>
-            <ul class="list-none space-y-2 text-gray-600">
+            <h4 class="text-base font-bold text-green-700 mb-1">Transmisión</h4>
+            <ul class="list-none space-y-1 text-gray-600 text-sm">
               <li class="flex items-start">
-                <span class="mr-2 text-green-500 font-bold text-lg">✓</span>
-                <span class="leading-tight">Contacto Casual (piel-piel).</span>
+                <span class="mr-2 text-green-500 font-bold">✓</span>Contacto
+                casual (piel-piel)
               </li>
               <li class="flex items-start">
-                <span class="mr-2 text-green-500 font-bold text-lg">✓</span>
-                <span class="leading-tight"
-                  >Fómites: Suelos húmedos, duchas, piscinas.</span
-                >
+                <span class="mr-2 text-green-500 font-bold">✓</span>Fómites:
+                duchas, piscinas
               </li>
               <li class="flex items-start">
-                <span class="mr-2 text-green-500 font-bold text-lg">✓</span>
-                <span class="leading-tight"
-                  >Autoinoculación: Rascarse o morderse.</span
-                >
+                <span class="mr-2 text-green-500 font-bold">✓</span
+                >Autoinoculación
               </li>
             </ul>
 
-            <h4 class="text-xl font-bold text-green-700 mt-6 mb-2">
-              Manifestación Clínica
+            <h4 class="text-base font-bold text-green-700 mt-4 mb-1">
+              ¿Dónde aparecen?
             </h4>
-            <p class="text-gray-600">
-              <span class="font-bold">Verrugas Comunes (Vulgares):</span> Manos,
-              dedos. <span class="font-bold">Verrugas Plantares:</span> Pies.
-              <span class="font-bold">Verrugas Planas:</span> Cara, antebrazos.
+            <p class="text-gray-600 text-sm">
+              <span class="font-bold">Comunes:</span> Manos, dedos.<br />
+              <span class="font-bold">Plantares:</span> Pies.<br />
+              <span class="font-bold">Planas:</span> Cara, antebrazos.
             </p>
           </div>
 
           <!-- Columna 2: VPH Mucoso (Genital/ITS) -->
           <div
-            class="card-diferenciacion bg-white p-6 rounded-2xl border-t-8 border-red-500"
+            class="card-diferenciacion bg-white p-4 rounded-2xl border-t-8 border-red-500"
           >
-            <div class="flex items-center mb-4">
+            <div class="flex items-center mb-2">
               <svg
                 class="w-10 h-10 text-red-600 mr-3"
                 fill="none"
@@ -168,64 +167,58 @@
                   d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2a3 3 0 00-3 3v1h6v-1c0-1.657-1.343-3-3-3s-3-2.895-3-2 1.343-2 3-2zM4 12H3m18 0h-1M6 16.5H5m14 0h-1m-7-5.5a2 2 0 100 4 2 2 0 000-4z"
                 ></path>
               </svg>
-              <h3 class="text-2xl font-semibold text-gray-800">
+              <h3 class="text-lg font-semibold text-gray-800">
                 VPH Mucoso (Genital / ITS)
               </h3>
             </div>
 
-            <h4 class="text-xl font-bold text-red-700 mt-6 mb-2">
-              Genotipos Típicos
+            <h4 class="text-base font-bold text-red-700 mt-4 mb-1">
+              Genotipos
             </h4>
-            <p class="text-gray-600 mb-4">
-              <span class="font-bold">Bajo Riesgo (6, 11)</span>.
-              <span class="font-bold">Alto Riesgo (16, 18, 31, 33).</span>
+            <p class="text-gray-600 mb-2 text-sm">
+              <span class="font-bold">Bajo riesgo:</span> 6, 11.<br />
+              <span class="font-bold">Alto riesgo:</span> 16, 18, 31, 33.<br />
               Afectan mucosas (genital, anal, oral).
             </p>
 
-            <h4 class="text-xl font-bold text-red-700 mb-2">Transmisión</h4>
-            <ul class="list-none space-y-2 text-gray-600">
+            <h4 class="text-base font-bold text-red-700 mb-1">Transmisión</h4>
+            <ul class="list-none space-y-1 text-gray-600 text-sm">
               <li class="flex items-start">
-                <span class="mr-2 text-red-500 font-bold text-lg">✗</span>
-                <span class="leading-tight"
-                  >Contacto Sexual (predominantemente).</span
-                >
+                <span class="mr-2 text-red-500 font-bold">✗</span>Contacto
+                sexual
               </li>
               <li class="flex items-start">
-                <span class="mr-2 text-red-500 font-bold text-lg">✗</span>
-                <span class="leading-tight"
-                  >Contacto íntimo piel-a-piel en zona genital.</span
-                >
+                <span class="mr-2 text-red-500 font-bold">✗</span>Contacto
+                íntimo zona genital
               </li>
               <li class="flex items-start">
-                <span class="mr-2 text-red-500 font-bold text-lg">✗</span>
-                <span class="leading-tight"
-                  >Menos riesgo por fomites (supervivencia limitada).</span
-                >
+                <span class="mr-2 text-red-500 font-bold">✗</span>Fómites: poco
+                frecuente
               </li>
             </ul>
 
-            <h4 class="text-xl font-bold text-red-700 mt-6 mb-2">
-              Manifestación Clínica
+            <h4 class="text-base font-bold text-red-700 mt-4 mb-1">
+              ¿Dónde aparecen?
             </h4>
-            <p class="text-gray-600">
-              <span class="font-bold">Condilomas Acuminados:</span> Lesiones
-              'coliflor', genitales/anales (VPH 6, 11).
-              <span class="font-bold">Lesiones Intraepiteliales:</span>
-              Displasias cervicales, anales.
+            <p class="text-gray-600 text-sm">
+              <span class="font-bold">Condilomas:</span> Genitales/anales, tipo
+              "coliflor" (6, 11).<br />
+              <span class="font-bold">Lesiones intraepiteliales:</span> Cuello
+              uterino, ano.
             </p>
           </div>
         </div>
       </section>
 
       <!-- 4. Verificación de Datos y Corroboración -->
-      <section id="verificacion" class="mb-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-6 text-center">
-          Corroboración de Datos Médicos (Verificación Crítica)
+      <section id="verificacion" class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+          ¿Qué dice la evidencia?
         </h2>
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="flex flex-col gap-6 md:grid md:grid-cols-3">
           <!-- Tarjeta 1: Confiabilidad -->
-          <div class="bg-blue-50 p-6 rounded-xl border-b-4 border-blue-600">
-            <p class="text-2xl font-bold text-blue-800 mb-3 flex items-center">
+          <div class="bg-blue-50 p-4 rounded-xl border-b-4 border-blue-600">
+            <p class="text-lg font-bold text-blue-800 mb-2 flex items-center">
               <svg
                 class="w-6 h-6 mr-2"
                 fill="none"
@@ -242,15 +235,18 @@
               </svg>
               Conceptos Fundamentales
             </p>
-            <p class="text-gray-700">
-              **100% CORRECTOS**. La distinción entre verrugas comunes/planas
-              (no sexuales) y condilomas (ITS) está sólidamente establecida.
+            <p class="text-gray-700 text-sm">
+              <span class="font-bold text-blue-900">✔ Correcto:</span>
+              <strong
+                >La distinción entre verrugas comunes/planas (no sexuales) y
+                condilomas (ITS) está sólidamente establecida.</strong
+              >
             </p>
           </div>
 
           <!-- Tarjeta 2: Matices -->
-          <div class="bg-amber-50 p-6 rounded-xl border-b-4 border-amber-600">
-            <p class="text-2xl font-bold text-amber-800 mb-3 flex items-center">
+          <div class="bg-amber-50 p-4 rounded-xl border-b-4 border-amber-600">
+            <p class="text-lg font-bold text-amber-800 mb-2 flex items-center">
               <svg
                 class="w-6 h-6 mr-2"
                 fill="none"
@@ -267,18 +263,19 @@
               </svg>
               Datos con Matices
             </p>
-            <p class="text-gray-700">
-              Los porcentajes específicos de transmisión (ej. eficacia del
-              preservativo 30-70%) son **aproximados** y varían según el estudio
-              epidemiológico, pero son válidos como rango.
+            <p class="text-gray-700 text-sm">
+              <span class="font-bold text-amber-900">ℹ Matiz:</span>
+              <em
+                >Los porcentajes específicos de transmisión (ej. eficacia del
+                preservativo 30-70%) son aproximados y varían según el estudio
+                epidemiológico, pero son válidos como rango.</em
+              >
             </p>
           </div>
 
           <!-- Tarjeta 3: Detección -->
-          <div class="bg-purple-50 p-6 rounded-xl border-b-4 border-purple-600">
-            <p
-              class="text-2xl font-bold text-purple-800 mb-3 flex items-center"
-            >
+          <div class="bg-purple-50 p-4 rounded-xl border-b-4 border-purple-600">
+            <p class="text-lg font-bold text-purple-800 mb-2 flex items-center">
               <svg
                 class="w-6 h-6 mr-2"
                 fill="none"
@@ -295,45 +292,49 @@
               </svg>
               Métodos de Detección
             </p>
-            <p class="text-gray-700">
-              La **Citología Cervical (Papanicolaou)** se usa para el VPH
-              mucoso. Es **INAPLICABLE** como método estándar para las verrugas
-              cutáneas (diagnóstico es clínico-visual).
+            <p class="text-gray-700 text-sm">
+              <span class="font-bold text-purple-900">🔬 Detección:</span>
+              <strong
+                >La citología cervical (Papanicolaou) se usa para el VPH
+                mucoso.</strong
+              >
+              <span class="block mt-1"
+                >No es aplicable como método estándar para las verrugas
+                cutáneas, cuyo diagnóstico es clínico-visual.</span
+              >
             </p>
           </div>
         </div>
       </section>
 
       <!-- 5. Conclusión y Mensaje para Llevar -->
-      <section id="conclusion" class="pt-10 border-t border-gray-300">
-        <h2 class="text-4xl font-bold text-gray-800 mb-6 text-center">
-          Mensaje para Llevar
+      <section id="conclusion" class="pt-8 border-t border-gray-300">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+          Para recordar
         </h2>
-        <div class="bg-blue-600 p-8 rounded-2xl text-white shadow-2xl">
-          <blockquote class="text-3xl italic font-light text-center">
-            "La presencia de una verruga común en la mano de un niño o en la
-            planta del pie de un adulto **NO** implica una infección de
-            transmisión sexual. Es un evento cutáneo, no genital."
+        <div class="bg-blue-600 p-6 rounded-2xl text-white shadow-2xl">
+          <blockquote class="text-xl italic font-light text-center">
+            "Una verruga en la mano o pie <span class="font-bold">no</span> es
+            una ITS. Es un evento cutáneo, no genital."
           </blockquote>
-          <div class="mt-6 flex justify-center space-x-4">
+          <div class="mt-5 flex flex-wrap justify-center gap-3">
             <span
-              class="px-4 py-1 bg-white text-blue-600 rounded-full text-lg font-medium"
+              class="px-5 py-2 bg-white text-blue-600 rounded-full text-base font-medium shadow"
               >#VPHCutáneo</span
             >
             <span
-              class="px-4 py-1 bg-white text-blue-600 rounded-full text-lg font-medium"
+              class="px-5 py-2 bg-white text-blue-600 rounded-full text-base font-medium shadow"
               >#ITSprevención</span
             >
             <span
-              class="px-4 py-1 bg-white text-blue-600 rounded-full text-lg font-medium"
+              class="px-5 py-2 bg-white text-blue-600 rounded-full text-base font-medium shadow"
               >#EducaciónMédica</span
             >
           </div>
         </div>
-
-        <div class="mt-8 text-center text-gray-600">
-          <p class="text-xl font-medium">
-            Fuentes de Respaldo: CDC, OMS, AAD, NCI, IARC.
+        <div class="mt-6 text-center text-gray-600">
+          <p class="text-base font-medium">
+            Fuentes: CDC, OMS, AAD, NCI, IARC.
           </p>
         </div>
       </section>

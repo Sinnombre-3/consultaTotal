@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Verrugas No Sexuales</title>
+    <!-- Carga de Tailwind CSS para un diseño moderno y responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter y un esquema de color azul-verde -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#1e40af', /* Azul oscuro para títulos */
+                        'secondary-green': '#10b981', /* Verde esmeralda para acentos */
+                        'bg-light': '#f7f7f7', /* Fondo muy suave */
+                        'card-bg': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos base para el cuerpo */
+        body {
+            background-color: #f7f7f7;
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilo para las tarjetas de información */
+        .info-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        /* Estilo para los títulos de sección */
+        .section-header {
+            border-bottom: 3px solid #10b981; /* Separador verde */
+            padding-bottom: 0.5rem;
+        }
+        /* Estilos para las tablas */
+        .styled-table th {
+            background-color: #d1fae5; /* Verde pálido */
+            color: #065f46; /* Verde oscuro */
+        }
+        .styled-table td {
+            padding: 0.75rem 1.5rem;
+        }
+        .styled-table tbody tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-7xl mx-auto bg-card-bg rounded-2xl shadow-2xl p-6 md:p-12">
+
+        <!-- Título Principal y Respuesta Directa -->
+        <header class="text-center pb-6 mb-8 border-b-4 border-secondary-green">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-primary-blue tracking-tight mb-2">
+                VERRUGAS NO SEXUALES
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-gray-700 font-light">
+                Clasificación, Tipos de VPH y Diferenciación
+            </h2>
+        </header>
+
+        <!-- RESPUESTA DIRECTA (DESTACADA) -->
+        <div class="text-center mb-10 p-5 bg-secondary-green/10 border-l-4 border-secondary-green rounded-lg shadow-md">
+            <p class="text-xl md:text-2xl font-bold text-primary-blue">
+                <span class="text-3xl font-extrabold mr-2">✓</span> Sí, tanto las Verrugas Planas como las Comunes pertenecen al grupo de **verrugas NO TRANSMITIDAS SEXUALMENTE.**
+            </p>
+        </div>
+
+
+        <!-- 1. CLASIFICACIÓN DE VERRUGAS NO SEXUALES -->
+        <section class="mb-12">
+            <h3 class="text-3xl font-bold text-primary-blue section-header mb-6">
+                1. Clasificación de Verrugas No Sexuales
+            </h3>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- 1.1 VERRUGAS COMUNES (Verrucae Vulgares) -->
+                <div class="info-card bg-card-bg p-6 rounded-xl border-t-8 border-primary-blue/70">
+                    <h4 class="text-2xl font-semibold text-primary-blue mb-3">1.1 VERRUGAS COMUNES (<span class="italic font-normal">Verrucae Vulgares</span>)</h4>
+                    <p class="text-gray-600 mb-4 font-semibold">VPH Causante: Principalmente VPH 2, 27, 57, 4, 7</p>
+
+                    <ul class="text-gray-700 space-y-2 text-sm list-disc list-inside ml-4">
+                        <li>**Tamaño:** 1-10 mm (inicialmente pequeño)</li>
+                        <li>**Forma:** Papulosa, elevada, superficie **rugosa**</li>
+                        <li>**Color:** Tono piel o más oscuras</li>
+                        <li>**Localización:** Manos, dedos, zonas periungueales</li>
+                    </ul>
+
+                    <h5 class="font-bold text-gray-800 mt-4 mb-2">Ejemplos de Contagio (NO Sexual):</h5>
+                    <ul class="text-xs text-gray-500 list-disc list-inside ml-4">
+                        <li>Caminar descalzo en duchas públicas.</li>
+                        <li>Morderse las uñas con verrugas periungueales (autoinoculación).</li>
+                        <li>Contacto con fómites en gimnasios.</li>
+                    </ul>
+                </div>
+
+                <!-- 1.2 VERRUGAS PLANAS (Verrucae Planae) -->
+                <div class="info-card bg-card-bg p-6 rounded-xl border-t-8 border-secondary-green/70">
+                    <h4 class="text-2xl font-semibold text-primary-blue mb-3">1.2 VERRUGAS PLANAS (<span class="italic font-normal">Verrucae Planae</span>)</h4>
+                    <p class="text-gray-600 mb-4 font-semibold">VPH Causante: Principalmente VPH 3 y 10</p>
+
+                    <ul class="text-gray-700 space-y-2 text-sm list-disc list-inside ml-4">
+                        <li>**Tamaño:** 1-5 mm de diámetro</li>
+                        <li>**Forma:** Ligeramente elevadas, superficie **lisa**</li>
+                        <li>**Color:** Tono piel, rosadas, amarillentas</li>
+                        <li>**Localización:** Cara, antebrazos, dorso de manos</li>
+                        <li>**Distribución:** Múltiples lesiones (10-100+)</li>
+                    </ul>
+
+                    <h5 class="font-bold text-gray-800 mt-4 mb-2">Ejemplos de Contagio (NO Sexual):</h5>
+                    <ul class="text-xs text-gray-500 list-disc list-inside ml-4">
+                        <li>Contagio entre hermanos en casa.</li>
+                        <li>Autoinoculación por afeitado o rasquido.</li>
+                        <li>Uso compartido de toallas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TIPOS DE VPH CUTÁNEOS (NO SEXUALES) -->
+        <section class="mb-12">
+            <h3 class="text-3xl font-bold text-primary-blue section-header mb-6">
+                2. Tipos de VPH Cutáneos (Tropismo Cutáneo)
+            </h3>
+
+            <div class="overflow-x-auto info-card rounded-xl shadow-lg mb-8">
+                <table class="min-w-full divide-y divide-gray-200 text-sm styled-table">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-3 text-left font-medium uppercase tracking-wider">Tipo VPH</th>
+                            <th class="px-6 py-3 text-left font-medium uppercase tracking-wider">Verruga Asociada</th>
+                            <th class="px-6 py-3 text-left font-medium uppercase tracking-wider">Localización Común</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-blue">VPH 1</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Verruga plantar</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Planta del pie</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-blue">VPH 2</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Verruga común</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Manos, dedos</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-blue">VPH 3 / VPH 10</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Verruga plana</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Cara, antebrazos</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-blue">VPH 7</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Verruga de carniceros</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Manos (exposición laboral)</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-blue">VPH 27 / VPH 57</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Verruga común / Plantar</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Manos, pies</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="text-2xl font-semibold text-primary-blue mb-3 mt-8">
+                Características Clave del VPH Cutáneo
+            </h4>
+            <ul class="grid sm:grid-cols-2 gap-4 text-gray-700 list-disc list-inside ml-4">
+                <li class="p-3 bg-secondary-green/5 rounded-lg border-l-4 border-secondary-green">
+                    **No infecta mucosas genitales** (diferente de VPH genital).
+                </li>
+                <li class="p-3 bg-secondary-green/5 rounded-lg border-l-4 border-secondary-green">
+                    **No se transmite sexualmente** (>99% de casos).
+                </li>
+                <li class="p-3 bg-secondary-green/5 rounded-lg border-l-4 border-secondary-green">
+                    Requiere **microlesiones cutáneas** para la entrada.
+                </li>
+                <li class="p-3 bg-

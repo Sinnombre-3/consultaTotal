@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informe Técnico: Verrudas Virales Cutáneas</title>
+    <!-- Carga de Tailwind CSS para un diseño moderno y responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter y un esquema de color vibrante -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            colors: {
+              "brand-primary": "#1e40af" /* Azul oscuro para títulos */,
+              "brand-secondary": "#3b82f6" /* Azul claro para acentos */,
+              "bg-light": "#f3f4f6" /* Fondo suave */,
+              "section-border": "#93c5fd" /* Borde azul suave */,
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Estilos personalizados para el contenedor principal y el sombreado de las tarjetas */
+      body {
+        background-color: #f3f4f6;
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+      }
+      .card {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: transform 0.2s;
+      }
+      .card:hover {
+        transform: translateY(-2px);
+      }
+      .section-title {
+        border-left: 5px solid #3b82f6;
+        padding-left: 1rem;
+        color: #1e40af;
+      }
+      /* Estilos para las listas de características */
+      .feature-list li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .feature-list li::before {
+        content: "•";
+        color: #1e40af;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        position: absolute;
+        left: 0;
+      }
+      /* Estilos específicos para la tabla de riesgo */
+      .risk-table th {
+        background-color: #dbeafe; /* Azul muy claro */
+        color: #1e40af;
+      }
+    </style>
+  </head>
+  <body class="p-4 sm:p-8">
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-2xl p-6 md:p-12">
+      <!-- Título Principal y Subtítulo -->
+      <header class="text-center pb-6 mb-8 border-b-4 border-brand-secondary">
+        <h1
+          class="text-4xl md:text-5xl font-extrabold text-brand-primary tracking-tight mb-2"
+        >
+          INFORME TÉCNICO
+        </h1>
+        <h2 class="text-2xl md:text-3xl text-gray-700 font-light">
+          VERRUGAS VIRALES CUTÁNEAS
+        </h2>
+        <p class="text-gray-500 mt-1 italic">
+          Características, Transmisión y Factores de Riesgo
+        </p>
+      </header>
+
+      <!-- 1. INTRODUCCIÓN -->
+      <section class="mb-10">
+        <h3 class="text-3xl font-bold section-title mb-5">1. Introducción</h3>
+        <p class="text-gray-600 mb-4 text-lg">
+          Las verrugas cutáneas son lesiones benignas causadas por el **Virus
+          del Papiloma Humano (VPH)**. Representan una de las infecciones
+          virales dermatológicas más comunes, con mayor prevalencia en población
+          infantil y adolescente.
+        </p>
+        <div class="grid md:grid-cols-3 gap-4 text-center">
+          <div class="card bg-brand-secondary/10 p-4 rounded-lg">
+            <p class="font-bold text-lg text-brand-primary">
+              Agente Etiológico
+            </p>
+            <p class="text-gray-700">VPH (más de 100 serotipos)</p>
+          </div>
+          <div class="card bg-brand-secondary/10 p-4 rounded-lg">
+            <p class="font-bold text-lg text-brand-primary">Incubación</p>
+            <p class="text-gray-700">1-6 meses (promedio 2-3 meses)</p>
+          </div>
+          <div class="card bg-brand-secondary/10 p-4 rounded-lg">
+            <p class="font-bold text-lg text-brand-primary">Naturaleza</p>
+            <p class="text-gray-700">Benigna, no cancerosa</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. CARACTERÍSTICAS CLÍNICAS -->
+      <section class="mb-10">
+        <h3 class="text-3xl font-bold section-title mb-5">
+          2. Características Clínicas
+        </h3>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+          <!-- Verrugas Planas -->
+          <div
+            class="card bg-white p-6 rounded-lg border-t-4 border-brand-secondary"
+          >
+            <h4 class="text-2xl font-semibold text-brand-primary mb-3">
+              2.1 Verrugas Planas (<span class="italic font-normal"
+                >Verrucae Planae</span
+              >)
+            </h4>
+            <ul class="text-gray-600 feature-list space-y-2">
+              <li>**Tamaño:** 1-5 mm de diámetro.</li>
+              <li>
+                **Morfología:** Ligeramente elevadas, superficie **lisa**.
+              </li>
+              <li>
+                **Color:** Tono piel, rosadas, amarillentas o ligeramente
+                pardas.
+              </li>
+              <li>**Distribución:** Cara, antebrazos, dorso de manos.</li>
+              <li>
+                **Presentación:** Múltiples lesiones (<span
+                  class="font-semibold"
+                  >10-100+</span
+                >).
+              </li>
+            </ul>
+          </div>
+
+          <!-- Verrugas Comunes -->
+          <div
+            class="card bg-white p-6 rounded-lg border-t-4 border-brand-secondary"
+          >
+            <h4 class="text-2xl font-semibold text-brand-primary mb-3">
+              2.2 Verrugas Comunes (<span class="italic font-normal"
+                >Verrucae Vulgares</span
+              >)
+            </h4>
+            <ul class="text-gray-600 feature-list space-y-2">
+              <li>**Tamaño inicial:** Muy pequeñas (1-2 mm).</li>
+              <li>
+                **Morfología:** Papulosas, evolucionan a textura **rugosa** y
+                áspera.
+              </li>
+              <li>**Color:** Tonalidad de la piel o ligeramente más claras.</li>
+              <li>**Distribución:** Manos, dedos, zonas periungueales.</li>
+              <li>**Crecimiento:** Lento y progresivo.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sintomatología -->
+        <div class="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+          <h4 class="text-xl font-semibold text-brand-primary mb-3">
+            2.3 Sintomatología
+          </h4>
+          <div class="grid md:grid-cols-2 gap-4 text-sm">
+            <div>
+              <p class="font-bold text-gray-700 mb-1">Síntomas Comunes:</p>
+              <ul class="text-gray-600 list-disc list-inside ml-2">
+                <li>Prurito leve a moderado (picor).</li>
+                <li>Sensación de pinchazos ocasionales.</li>
+                <li>Molestia por fricción o presión.</li>
+                <li>Generalmente **asintomáticas**.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-bold text-gray-700 mb-1">
+                Causas de la Sintomatología:
+              </p>
+              <ul class="text-gray-600 list-disc list-inside ml-2">
+                <li>Irritación mecánica por rascado.</li>
+                <li>Inflamación local.</li>
+                <li>Presión sobre terminaciones nerviosas.</li>
+                <li>Respuesta inmunológica del huésped.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. MECANISMOS DE TRANSMISIÓN -->
+      <section class="mb-10">
+        <h3 class="text-3xl font-bold section-title mb-5">
+          3. Mecanismos de Transmisión
+        </h3>
+        <p class="text-gray-600 mb-6 italic">
+          La transmisión es exclusivamente **NO sexual** y requiere una ruptura
+          en la barrera cutánea.
+        </p>
+
+        <div class="grid lg:grid-cols-3 gap-6">
+          <!-- Tarjeta Transmisión Directa -->
+          <div
+            class="card bg-white p-5 rounded-lg border-l-4 border-brand-secondary"
+          >
+            <h4 class="font-bold text-xl text-brand-primary mb-2">
+              3.1 Transmisión Directa
+            </h4>
+            <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+              <li>Contacto piel con piel con verrugas activas.</li>
+              <li>Entrada del virus a través de microlesiones cutáneas.</li>
+              <li>
+                Riesgo aumentado con soluciones de continuidad en la piel.
+              </li>
+            </ul>
+          </div>
+          <!-- Tarjeta Fómites -->
+          <div
+            class="card bg-white p-5 rounded-lg border-l-4 border-brand-secondary"
+          >
+            <h4 class="font-bold text-xl text-brand-primary mb-2">
+              3.2 Transmisión Indirecta (Fómites)
+            </h4>
+            <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+              <li>
+                **Superficies de alto riesgo:** Pisos de piscinas y duchas
+                públicas.
+              </li>
+              <li>Toallas y ropa/calzado compartido.</li>
+              <li>Condiciones: Ambientes cálidos y húmedos.</li>
+            </ul>
+          </div>
+          <!-- Tarjeta Autoinoculación -->
+          <div
+            class="card bg-white p-5 rounded-lg border-l-4 border-brand-secondary"
+          >
+            <h4 class="font-bold text-xl text-brand-primary mb-2">
+              3.3 Autoinoculación
+            </h4>
+            <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+              <li>Manipulación o rascado de verrugas existentes.</li>
+              <li>
+                **Onicofagia** (morderse las uñas) con verrugas periungueales.
+              </li>
+              <li>Afeitado o depilación sobre lesiones.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. FACTORES DE RIESGO -->
+      <section class="mb-10">
+        <h3 class="text-3xl font-bold section-title mb-5">
+          4. Factores de Riesgo
+        </h3>
+
+        <!-- Factores Relacionados con la Barrera Cutánea (Tabla) -->
+        <h4 class="text-2xl font-semibold text-brand-primary mb-3">
+          4.1 Factores Relacionados con la Barrera Cutánea
+        </h4>
+        <div class="overflow-x-auto card rounded-lg shadow-md mb-8">
+          <table class="min-w-full divide-y divide-gray-200 risk-table text-sm">
+            <thead>
+              <tr>
+                <th class="px-6 py-3 font-medium uppercase tracking-wider">
+                  Factor
+                </th>
+                <th class="px-6 py-3 font-medium uppercase tracking-wider">
+                  Mecanismo
+                </th>
+                <th class="px-6 py-3 font-medium uppercase tracking-wider">
+                  Nivel de Riesgo
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap font-medium">
+                  Piel húmeda/macerada
+                </td>
+                <td class="px-6 py-4">Debilitamiento de la barrera</td>
+                <td class="px-6 py-4 text-red-600 font-semibold">Alto</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap font-medium">
+                  Heridas y abrasiones
+                </td>
+                <td class="px-6 py-4">Entrada directa del virus</td>
+                <td class="px-6 py-4 text-red-700 font-bold">Muy Alto</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap font-medium">
+                  Dermatitis atópica
+                </td>
+                <td class="px-6 py-4">Alteración de la barrera</td>
+                <td class="px-6 py-4 text-red-600 font-semibold">Alto</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap font-medium">
+                  Hiperhidrosis
+                </td>
+                <td class="px-6 py-4">Maceración crónica</td>
+                <td class="px-6 py-4 text-orange-500">Moderado-Alto</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Factores Inmunológicos y Ambientales -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Factores Inmunológicos -->
+          <div>
+            <h4 class="text-2xl font-semibold text-brand-primary mb-3">
+              4.2 Factores Inmunológicos
+            </h4>
+            <ul class="text-gray-600 list-disc list-inside ml-4 space-y-1">
+              <li class="font-bold">Alto Riesgo:</li>
+              <ul class="list-none ml-4 space-y-0.5">
+                <li>- Inmunosupresión (VIH, trasplantados).</li>
+                <li>- Edad pediátrica (sistema inmune en desarrollo).</li>
+              </ul>
+              <li class="font-bold mt-2">Moderado Riesgo:</li>
+              <ul class="list-none ml-4 space-y-0.5">
+                <li>- Estrés crónico.</li>
+                <li>- Desnutrición o enfermedades crónicas.</li>
+              </ul>
+            </ul>
+          </div>
+          <!-- Factores Ambientales y Conductuales -->
+          <div>
+            <h4 class="text-2xl font-semibold text-brand-primary mb-3">
+              4.3 Factores Ambientales y Conductuales
+            </h4>
+            <ul class="text-gray-600 list-disc list-inside ml-4 space-y-1">
+              <li>Frecuencia de piscinas y duchas públicas.</li>
+              <li>Práctica deportiva en instalaciones comunitarias.</li>
+              <li>Caminar **descalzo** en áreas públicas.</li>
+              <li>Compartir objetos personales (toallas, calzado).</li>
+              <li>Ocupaciones con exposición a humedad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. VIABILIDAD Y PERSISTENCIA DEL VIRUS -->
+      <section class="mb-10">
+        <h3 class="text-3xl font-bold section-title mb-5">
+          5. Viabilidad y Persistencia del Virus
+        </h3>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Supervivencia Ambiental -->
+          <div
+            class="bg-gray-100 p-5 rounded-lg border-l-4 border-brand-secondary"
+          >
+            <h4 class="text-xl font-semibold text-brand-primary mb-3">
+              5.1 Supervivencia Ambiental
+            </h4>
+            <ul class="text-gray-700 list-disc list-inside ml-4 text-sm">
+              <li>En superficies secas: **Horas**</li>
+              <li>En superficies húmedas: **Días**</li>
+              <li>Condiciones óptimas: Temperatura 25-37°C, humedad >70%.</li>
+              <li>
+                Resistencia: Mayor en ambientes húmedos y protegidos de luz UV.
+              </li>
+            </ul>
+          </div>
+          <!-- Características del Virión -->
+          <div
+            class="bg-gray-100 p-5 rounded-lg border-l-4 border-brand-secondary"
+          >
+            <h4 class="text-xl font-semibold text-brand-primary mb-3">
+              5.2 Características del Virión
+            </h4>
+            <ul class="text-gray-700 list-disc list-inside ml-4 text-sm">
+              <li>Tipo: Virus ADN de doble cadena.</li>
+              <li>
+                Cápside: Icosaédrica, **sin envoltura** (mayor resistencia).
+              </li>
+              <li>
+                Especificidad: **Epiteliotropo** (infecta queratinocitos).
+              </li>
+              <li>
+                Replicación: Requiere células vivas (no se replica fuera del
+                huésped).
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. PREVENCIÓN -->
+      <section class="mb-10">
+        <h3 class="text-3xl font-bold section-title mb-5">6. Prevención</h3>
+        <p class="text-lg text-gray-700 font-semibold mb-4">
+          La prevención se enfoca en proteger la integridad de la barrera
+          cutánea y evitar la exposición al virus.
+        </p>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+          <!-- Medidas Primarias -->
+          <div
+            class="card bg-green-50 p-6 rounded-lg border-l-4 border-green-600"
+          >
+            <h4 class="text-2xl font-semibold text-green-700 mb-3">
+              6.1 Medidas Primarias
+            </h4>
+            <ol class="list-decimal list-inside ml-4 text-gray-700 space-y-3">
+              <li>
+                <p class="font-bold">Higiene personal:</p>
+                <ul class="list-disc list-inside ml-4 text-sm">
+                  <li>Lavado frecuente de manos.</li>
+                  <li>Secado **completo** de pies tras baño/ducha.</li>
+                  <li>No compartir toallas ni calzado.</li>
+                </ul>
+              </li>
+              <li>
+                <p class="font-bold">Protección en áreas públicas:</p>
+                <ul class="list-disc list-inside ml-4 text-sm">
+                  <li>Uso de **chanclas** en piscinas y duchas públicas.</li>
+                  <li>Evitar contacto directo con superficies húmedas.</li>
+                </ul>
+              </li>
+              <li>
+                <p class="font-bold">Cuidado de la piel:</p>
+                <ul class="list-disc list-inside ml-4 text-sm">
+                  <li>Mantener piel hidratada.</li>
+                  <li>Tratamiento y cobertura de heridas y cortes.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Medidas Secundarias -->
+          <div
+            class="card bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-600"
+          >
+            <h4 class="text-2xl font-semibold text-yellow-700 mb-3">
+              6.2 Medidas Secundarias
+            </h4>
+            <ul class="text-gray-700 list-disc list-inside ml-4 space-y-2">
+              <li>**No manipular** o tocar verrugas propias o ajenas.</li>
+              <li>Evitar la autoinoculación a toda costa.</li>
+              <li>
+                Cubrir verrugas (con vendaje impermeable) durante actividades
+                deportivas o exposición a agua.
+              </li>
+              <li>Consulta médica temprana para tratamiento.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. CONCLUSIONES Y REFERENCIAS -->
+      <footer class="pt-8 border-t-2 border-brand-secondary">
+        <h3 class="text-3xl font-bold section-title mb-5">7. Conclusiones</h3>
+        <p class="text-gray-600 mb-6 text-lg text-center max-w-4xl mx-auto">
+          Las verrugas virales cutáneas son infecciones comunes causadas por
+          VPH. Su transmisión se facilita por contacto directo, fómites y
+          autoinoculación, siendo la **presencia de microlesiones cutáneas** y
+          factores inmunológicos los principales determinantes de la
+          susceptibilidad. La clave de la prevención reside en la higiene
+          rigurosa y la protección de la piel en áreas de riesgo.
+        </p>
+
+        <h4 class="text-xl font-semibold text-brand-primary mt-6 mb-3">
+          8. Referencias Bibliográficas (Fuentes Primarias)
+        </h4>
+        <ul class="text-gray-500 list-disc list-inside ml-4 text-sm">
+          <li>Organización Mundial de la Salud (OMS) - Guías sobre VPH.</li>
+          <li>American Academy of Dermatology - Clinical Guidelines.</li>
+          <li>
+            Centers for Disease Control and Prevention (CDC) - HPV Information.
+          </li>
+        </ul>
+
+        <p class="text-sm text-gray-400 mt-6 text-right">
+          Fecha de elaboración: Octubre 2025. Documento de carácter informativo
+          y educativo.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

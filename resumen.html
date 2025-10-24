@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resumen: Verrudas Virales Cutáneas</title>
+    <!-- Carga de Tailwind CSS para un diseño moderno y responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter y sombras suaves -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            colors: {
+              primary: "#007bff",
+              secondary: "#6c757d",
+              success: "#28a745",
+              warning: "#ffc107",
+              info: "#17a2b8",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Estilos personalizados para el contenedor principal y el sombreado de las tarjetas */
+      body {
+        background-color: #f8f9fa; /* Fondo gris claro */
+        font-family: "Inter", sans-serif;
+      }
+      .card {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease-in-out;
+      }
+      .card:hover {
+        transform: translateY(-3px);
+      }
+      /* Estilos para hacer las tablas más legibles */
+      th {
+        background-color: #e9ecef;
+        color: #495057;
+      }
+      th,
+      td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #dee2e6;
+      }
+      /* Color para los puntos clave */
+      .key-point {
+        color: #007bff; /* Color azul primario */
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body class="p-4 sm:p-8">
+    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-2xl p-6 md:p-10">
+      <!-- Título Principal -->
+      <header class="text-center pb-6 border-b-2 border-primary">
+        <h1
+          class="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight mb-2"
+        >
+          RESUMEN
+        </h1>
+        <h2 class="text-xl md:text-2xl text-primary font-light">
+          VERRUGAS VIRALES CUTÁNEAS
+        </h2>
+        <p class="text-gray-500 mt-1">
+          Tipos, Transmisión NO Sexual y Prevención
+        </p>
+      </header>
+
+      <!-- 1. INTRODUCCIÓN RÁPIDA -->
+      <section class="mt-8">
+        <h3
+          class="text-2xl font-semibold text-gray-700 mb-4 border-l-4 border-success pl-3"
+        >
+          1. Introducción Rápida
+        </h3>
+        <p class="text-gray-600 mb-6">
+          Las verrugas cutáneas son crecimientos benignos de la piel causados
+          por el **Virus del Papiloma Humano (VPH)**. Son la infección viral
+          dermatológica más común, especialmente en niños y adolescentes.
+        </p>
+
+        <div class="overflow-x-auto card rounded-lg">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+              <tr>
+                <th
+                  class="py-3 px-6 text-xs font-medium uppercase tracking-wider"
+                >
+                  Característica
+                </th>
+                <th
+                  class="py-3 px-6 text-xs font-medium uppercase tracking-wider"
+                >
+                  Detalle
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200 text-sm">
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap key-point">
+                  Agente Causal
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  Virus del Papiloma Humano (VPH) - **Tipos Cutáneos**
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">Naturaleza</td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  Benigna (no cancerosa)
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">Incubación</td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  1 a 6 meses (promedio: 2-3 meses)
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap key-point">
+                  Transmisión
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  Exclusivamente NO sexual
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 2. DIFERENCIACIÓN CLAVE: VPH Cutáneo vs. VPH Genital -->
+      <section class="mt-10">
+        <h3
+          class="text-2xl font-semibold text-gray-700 mb-4 border-l-4 border-info pl-3"
+        >
+          2. Diferenciación Clave: VPH Cutáneo vs. VPH Genital
+        </h3>
+        <p class="text-gray-600 mb-6">
+          Es crucial entender que las verrugas de la piel son causadas por cepas
+          de VPH de **tropismo cutáneo** y no son de transmisión sexual.
+        </p>
+
+        <div class="overflow-x-auto card rounded-lg">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-info/20">
+              <tr>
+                <th
+                  class="py-3 px-6 text-xs font-medium uppercase tracking-wider"
+                >
+                  Tipo de VPH
+                </th>
+                <th
+                  class="py-3 px-6 text-xs font-medium uppercase tracking-wider key-point"
+                >
+                  VPH Cutáneo (No Sexual)
+                </th>
+                <th
+                  class="py-3 px-6 text-xs font-medium uppercase tracking-wider text-red-600"
+                >
+                  VPH Mucoso (Sexual)
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200 text-sm">
+              <tr>
+                <td class="px-6 py-4">Verrugas Típicas</td>
+                <td class="px-6 py-4 key-point">
+                  Comunes, Planas, Plantares, Filiformes
+                </td>
+                <td class="px-6 py-4 text-red-600">
+                  Condilomas (Verrugas Genitales)
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4">Tipos de VPH</td>
+                <td class="px-6 py-4">**VPH 1, 2, 3, 4, 7, 10, 27, 57**</td>
+                <td class="px-6 py-4 text-red-600">
+                  **VPH 6, 11, 16, 18** (Alto Riesgo)
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4">Localización</td>
+                <td class="px-6 py-4">
+                  Manos, dedos, cara, plantas de pies (Piel queratinizada)
+                </td>
+                <td class="px-6 py-4">Genitales, ano, boca (Mucosas)</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4">Riesgo Oncogénico</td>
+                <td class="px-6 py-4 font-bold text-success">Nulo</td>
+                <td class="px-6 py-4 font-bold text-red-600">
+                  Alto (VPH 16, 18)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 3. CLASIFICACIÓN Y CARACTERÍSTICAS VISUALES -->
+      <section class="mt-10">
+        <h3
+          class="text-2xl font-semibold text-gray-700 mb-4 border-l-4 border-warning pl-3"
+        >
+          3. Clasificación y Características Visuales
+        </h3>
+
+        <div class="grid md:grid-cols-2 gap-6 mt-6">
+          <!-- Verrugas Comunes Card -->
+          <div class="card bg-white p-5 rounded-lg border-t-4 border-warning">
+            <h4 class="text-lg font-bold text-warning mb-2">
+              Verrugas Comunes
+            </h4>
+            <ul class="text-gray-600 list-disc list-inside space-y-1 text-sm">
+              <li>**Causante:** VPH 2, 27, 57</li>
+              <li>**Localización:** Manos, dedos, alrededor de uñas.</li>
+              <li>
+                **Aspecto:** Elevada, superficie **rugosa** y áspera, color
+                piel.
+              </li>
+            </ul>
+          </div>
+          <!-- Verrugas Planas Card -->
+          <div class="card bg-white p-5 rounded-lg border-t-4 border-warning">
+            <h4 class="text-lg font-bold text-warning mb-2">Verrugas Planas</h4>
+            <ul class="text-gray-600 list-disc list-inside space-y-1 text-sm">
+              <li>**Causante:** VPH 3, 10</li>
+              <li>**Localización:** Cara, antebrazos, dorso de manos.</li>
+              <li>
+                **Aspecto:** Ligeramente **elevadas** (casi planas), superficie
+                **lisa**, pequeñas.
+              </li>
+            </ul>
+          </div>
+          <!-- Verrugas Plantares Card -->
+          <div class="card bg-white p-5 rounded-lg border-t-4 border-warning">
+            <h4 class="text-lg font-bold text-warning mb-2">
+              Verrugas Plantares
+            </h4>
+            <ul class="text-gray-600 list-disc list-inside space-y-1 text-sm">
+              <li>**Causante:** VPH 1, 4</li>
+              <li>**Localización:** Planta del pie.</li>
+              <li>
+                **Aspecto:** Hundidas (por presión), a menudo dolorosas, con
+                **puntos negros**.
+              </li>
+            </ul>
+          </div>
+          <!-- Verrugas Filiformes Card -->
+          <div class="card bg-white p-5 rounded-lg border-t-4 border-warning">
+            <h4 class="text-lg font-bold text-warning mb-2">
+              Verrugas Filiformes
+            </h4>
+            <ul class="text-gray-600 list-disc list-inside space-y-1 text-sm">
+              <li>**Causante:** VPH 2, 7</li>
+              <li>**Localización:** Cara, cuello, párpados.</li>
+              <li>**Aspecto:** Crecimiento alargado, fino, como un hilo.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. MECANISMOS DE TRANSMISIÓN NO SEXUAL -->
+      <section class="mt-10">
+        <h3
+          class="text-2xl font-semibold text-gray-700 mb-4 border-l-4 border-secondary pl-3"
+        >
+          4. Mecanismos de Transmisión NO Sexual
+        </h3>
+        <p class="text-gray-600 mb-4">
+          El VPH cutáneo requiere una
+          <span class="key-point"
+            >**ruptura en la barrera de la piel** (microlesiones)</span
+          >
+          para infectar los queratinocitos.
+        </p>
+
+        <div class="grid lg:grid-cols-3 gap-6">
+          <!-- Tarjeta de Contacto Directo -->
+          <div
+            class="card bg-gray-50 p-5 rounded-lg border-l-4 border-secondary"
+          >
+            <h4 class="font-bold text-gray-800 mb-2">Contacto Directo</h4>
+            <p class="text-sm text-gray-600">
+              Contacto físico con la verruga activa de otra persona.
+            </p>
+            <p class="text-xs text-gray-500 mt-2 italic">
+              Ej: Saludar de mano o tocar una lesión.
+            </p>
+          </div>
+          <!-- Tarjeta de Fómites -->
+          <div
+            class="card bg-gray-50 p-5 rounded-lg border-l-4 border-secondary"
+          >
+            <h4 class="font-bold text-gray-800 mb-2">Fómites Húmedos</h4>
+            <p class="text-sm text-gray-600">
+              El virus sobrevive en superficies comunitarias húmedas.
+            </p>
+            <p class="text-xs text-gray-500 mt-2 italic">
+              Ej: Caminar **descalzo** en duchas o piscinas públicas.
+            </p>
+          </div>
+          <!-- Tarjeta de Autoinoculación -->
+          <div
+            class="card bg-gray-50 p-5 rounded-lg border-l-4 border-secondary"
+          >
+            <h4 class="font-bold text-gray-800 mb-2">Autoinoculación</h4>
+            <p class="text-sm text-gray-600">
+              El virus se disemina de una parte del cuerpo a otra.
+            </p>
+            <p class="text-xs text-gray-500 mt-2 italic">
+              Ej: **Rascar** una verruga y tocar otra parte del cuerpo.
+            </p>
+          </div>
+        </div>
+
+        <h4 class="text-lg font-semibold text-gray-700 mt-8 mb-3">
+          Factores que Aumentan el Riesgo
+        </h4>
+        <ul class="text-gray-600 list-disc list-inside space-y-1 ml-4">
+          <li>
+            <span class="key-point">Barrera Cutánea Alterada:</span> Piel
+            húmeda, agrietada, abrasiones o dermatitis.
+          </li>
+          <li>
+            <span class="key-point">Factores Inmunológicos:</span> Sistema
+            inmune en desarrollo (niños) o debilitado.
+          </li>
+          <li>
+            <span class="key-point">Conductuales:</span> Morderse las uñas
+            (onicofagia), compartir toallas o calzado.
+          </li>
+        </ul>
+      </section>
+
+      <!-- 5. PREVENCIÓN: Cuidado de la Piel y Entorno -->
+      <section class="mt-10">
+        <h3
+          class="text-2xl font-semibold text-gray-700 mb-4 border-l-4 border-primary pl-3"
+        >
+          5. Prevención: Cuidado de la Piel y Entorno
+        </h3>
+        <p class="text-gray-600 mb-6">
+          La prevención es la mejor estrategia y se centra en evitar el contacto
+          del virus con tu piel.
+        </p>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Medida 1 -->
+          <div class="flex items-start bg-primary/10 p-4 rounded-lg">
+            <span class="text-xl text-primary mr-3">👟</span>
+            <div>
+              <h4 class="font-bold text-gray-800">Protección en Público</h4>
+              <p class="text-sm text-gray-600">
+                Usar **chanclas o sandalias** en piscinas, duchas y vestuarios
+                comunitarios.
+              </p>
+            </div>
+          </div>
+          <!-- Medida 2 -->
+          <div class="flex items-start bg-primary/10 p-4 rounded-lg">
+            <span class="text-xl text-primary mr-3">🧼</span>
+            <div>
+              <h4 class="font-bold text-gray-800">Higiene Rigurosa</h4>
+              <p class="text-sm text-gray-600">
+                Lavado frecuente y **secado completo** de pies y manos.
+              </p>
+            </div>
+          </div>
+          <!-- Medida 3 -->
+          <div class="flex items-start bg-primary/10 p-4 rounded-lg">
+            <span class="text-xl text-primary mr-3">🚫</span>
+            <div>
+              <h4 class="font-bold text-gray-800">No Manipular</h4>
+              <p class="text-sm text-gray-600">
+                Evitar rascar o morder verrugas existentes para prevenir la
+                diseminación.
+              </p>
+            </div>
+          </div>
+          <!-- Medida 4 -->
+          <div class="flex items-start bg-primary/10 p-4 rounded-lg">
+            <span class="text-xl text-primary mr-3">🩹</span>
+            <div>
+              <h4 class="font-bold text-gray-800">Cuidado de Heridas</h4>
+              <p class="text-sm text-gray-600">
+                Tratar y **cubrir inmediatamente** cualquier corte o raspadura.
+              </p>
+            </div>
+          </div>
+          <!-- Medida 5 -->
+          <div class="flex items-start bg-primary/10 p-4 rounded-lg">
+            <span class="text-xl text-primary mr-3">❌</span>
+            <div>
+              <h4 class="font-bold text-gray-800">No Compartir</h4>
+              <p class="text-sm text-gray-600">
+                Evitar compartir toallas, calzado o herramientas de afeitado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. CONCLUSIÓN -->
+      <footer class="mt-10 pt-6 border-t border-gray-300 text-center">
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">Conclusión</h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Las verrugas cutáneas son una condición dermatológica **no grave** y
+          común. La transmisión es casual (no sexual) y está facilitada por
+          microlesiones en la piel. La mejor estrategia es la prevención,
+          manteniendo una piel sana y usando protección en ambientes húmedos y
+          comunitarios.
+        </p>
+        <p class="text-sm text-gray-400 mt-4">
+          Documento informativo generado por Gemini.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
